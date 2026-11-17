@@ -1,0 +1,13 @@
+{
+  "name": "itmosoft/laravel-activity-timeline",
+  "description": "Polymorphic activity feed and chronological event timeline for Laravel models, with actor attribution and structured properties.",
+  "type": "library",
+  "license": "MIT",
+  "require": {"php": "^8.3", "illuminate/database": "^12.0 || ^13.0", "illuminate/support": "^12.0 || ^13.0"},
+  "require-dev": {"orchestra/testbench": "^10.0 || ^11.0", "phpunit/phpunit": "^11.5 || ^12.0"},
+  "autoload": {"psr-4": {"ItmoSoft\\ActivityTimeline\\": "src/"}},
+  "autoload-dev": {"psr-4": {"ItmoSoft\\ActivityTimeline\\Tests\\": "tests/"}},
+  "extra": {"laravel": {"providers": ["ItmoSoft\\ActivityTimeline\\ActivityTimelineServiceProvider"], "aliases": {"ActivityTimeline": "ItmoSoft\\ActivityTimeline\\Facades\\ActivityTimeline"}}},
+  "scripts": {"test": "phpunit"},
+  "config": {"sort-packages": true}
+}
